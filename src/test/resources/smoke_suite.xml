@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke tests">
+
+    <test name="User Creation API">
+        <classes>
+            <class name="pl.restassured.user.UserCreationPOJOTest"/>
+            <class name="pl.restassured.user.CreateUserWithDataGenerationTest"/>
+        </classes>
+    </test>
+
+    <test name="User Update API">
+        <classes>
+            <class name="pl.restassured.user.UpdateUserPOJOTest"/>
+        </classes>
+    </test>
+
+    <test name="Pet API">
+        <classes>
+            <class name="pl.restassured.pet.CreateAndUpdatePetPOJOTest"/>
+            <class name="pl.restassured.pet.DeletePetPOJOTest"/>
+            <class name="pl.restassured.pet.FilterPetsWithGivenStatusTest"/>
+            <class name="pl.restassured.pet.CreateAndUpdatePetTest"></class>
+        </classes>
+    </test>
+
+    <test name="Cert API">
+        <classes>
+            <class name="pl.restassured.cert.InvalidCertTest"/>
+        </classes>
+    </test>
+
+</suite>
